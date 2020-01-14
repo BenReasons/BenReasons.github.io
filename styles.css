@@ -1,0 +1,37 @@
+.non-fiction {
+    border-style: dotted;
+    border-color: black;
+    border-width: 2px;
+    width: 250px;
+    font-weight: bold;
+}
+.fiction {
+    border-style: solid;
+    border-color: gray;
+    border-width: 2px;
+    width: 250px;
+}
+body {
+    font-family: fantasy;
+    background-color:lightgray;
+}
+img.dorian {
+    width: 250px;
+    border-style: none;
+}
+.leftcolumn {
+    width: 80px;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium';
+}
+.rightcolumn {
+    width: 150px;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium';
+}
+.favwebsites {
+    font-family: 'Franklin Gothic Medium';
+}
+.fantasy {
+    font-family: 'Times New Roman';
+}
