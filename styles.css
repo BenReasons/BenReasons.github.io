@@ -4,12 +4,6 @@ body {
 .navbar {
     background-color: white;
 }
-.book-image {
-    font-weight: bold;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 .jumbotron {
     background-attachment: fixed;
     background-image: url(Library_4.jpg);
@@ -18,6 +12,30 @@ body {
 
     color: white;
     text-shadow: 2px 2px 2px black;
+}
+.jumbotron-fantasy {
+    background-attachment: fixed;
+    background-image: url(Hogwarts_2.PNG);
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+
+    color: #C0C0C0;
+    text-shadow: 2px 2px 2px #740001;
+}
+.block-quote-footer {
+    color: #747272;
+}
+.book-image {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.acclaim {
+    background-attachment: fixed;
+    background-image: url(Paper\ Background_2.webp);
+    background-size: cover;
 }
 .fas {
     color: gold;
