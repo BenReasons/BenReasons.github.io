@@ -1,6 +1,12 @@
 body {
     font-family: 'Arvo';
 }
+body.fantasy {
+    font-family: 'Gelasio';
+}
+body.sf {
+    font-family: 'Source Code Pro';
+}
 .navbar {
     background-color: white;
 }
@@ -16,6 +22,15 @@ body {
 .jumbotron-fantasy {
     background-attachment: fixed;
     background-image: url(Hogwarts_2.PNG);
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+
+    color: #C0C0C0;
+    text-shadow: 2px 2px 2px #740001;
+}
+.jumbotron-sf {
+    background-attachment: fixed;
+    background-image: url(scifi.PNG);
     background-repeat: no-repeat;
     background-size: 100% 30%;
 
