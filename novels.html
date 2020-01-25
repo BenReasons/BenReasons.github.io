@@ -4,86 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello, Bootstrap!</title>
+    <title>Favorite Novels</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
+    <!-- Swap out "Roboto" for the font(s) you want to use -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Arvo&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Ben's Favorites:</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="novels.html">Novels</a>
-                        <a class="dropdown-item" href="#">Fantasy</a>
-                        <a class="dropdown-item" href="#">Science Fiction</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Food</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-sm">
+            <a class="navbar-brand" href="#">Categories:</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="novels.html">Novels</a>
+                            <a class="dropdown-item" href="#">Fantasy</a>
+                            <a class="dropdown-item" href="#">Science Fiction</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Food</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+    <div class="jumbotron jumbotron">
+        <div class="container-sm">
             <h1 class="display-4 text-center">Favorite Novels</h1>
             <p class="lead text-center">This is not my actual bookshelf, but I wish it was!</p>
         </div>
     </div>
-    <div class="container">
+    <div class="container-sm">
         <div class="row">
-            <div class="col-lg-4 text-center">
+            <div class="col-sm-4 text-center">
                 <div class="card" style="width: 18rem;">
                     <img src="Infinite Jest.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">1. Infinite Jest</h5>
                         <h6>by David Foster Wallace</h6>
                         <br>
+                        <!-- <p>
+                            <a href="https:www.google.com" class="btn btn-success"><i class="fas fa-star"></i> TEST</a>
+                        </p> -->
+                        <h5>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </h5>
                         <a href="https://www.goodreads.com/book/show/6759.Infinite_Jest?ac=1&from_search=true&qid=aQPtOVCyr0&rank=1" target="_blank">Check it out on Goodreads</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 text-center">
+            <div class="col-sm-4 text-center">
                 <div class="card" style="width: 18rem;">
                     <img src="Blood Meridian.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">2. Blood Meridian</h5>
                         <h6>by Cormac McCarthy</h6>
                         <br>
+                        <h5>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </h5>
                         <a href="https://www.goodreads.com/book/show/394535.Blood_Meridian_or_the_Evening_Redness_in_the_West?ac=1&from_search=true&qid=RjoaBPsexd&rank=1" target="_blank">Check it out on Goodreads</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 text-center">
+            <div class="col-sm-4 text-center">
                 <div class="card" style="width: 18rem;">
                     <img src="The Count of Monte Cristo.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">3. The Count of Monte Cristo</h5>
                         <h6>by Alexandre Dumas</h6>
+                        <h5>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </h5>
                         <a href="https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo?ac=1&from_search=true&qid=Sh9HSyvgTL&rank=1" target="_blank">Check it out on Goodreads</a>
                     </div>
                 </div>
@@ -91,15 +124,15 @@
         </div>
     </div>
     <hr class="my-4">
-    <div class="container">
+    <div class="container-sm">
         <div class="row">
             <div class="col text-center">
                 <h2>Other Great Novels</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
                 <div id="carouselExampleControls" class="carousel slide  data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -128,7 +161,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4"></div>
+            <div class="col-sm-4"></div>
         </div>
     </div>
 </body>
