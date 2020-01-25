@@ -40,6 +40,9 @@ body.sf {
 .block-quote-footer {
     color: #747272;
 }
+.block-quote-footer-sf {
+    color: #ececec;
+}
 .book-image {
     font-weight: bold;
     display: flex;
@@ -50,6 +53,12 @@ body.sf {
 .acclaim-fantasy {
     background-attachment: fixed;
     background-image: url(Deathly\ Hallows.jpg);
+    background-size: cover;
+    color: white;
+}
+.acclaim-sf {
+    background-attachment: fixed;
+    background-image: url(sf\ bg.jpg);
     background-size: cover;
     color: white;
 }
