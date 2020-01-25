@@ -4,54 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ben's Favorites!</title>
+    <title>Ben's Favorite Books and Places</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Swap out "Roboto" for the font(s) you want to use -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Arvo|Overpass|Hind Vadodara&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous">
+
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Ben's Favorites:</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="novels.html">Novels</a>
-                    <a class="dropdown-item" href="fantasy.html">Fantasy Series</a>
-                    <a class="dropdown-item" href="scifi.html">Science Fiction Books</a>
+<body class="main">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-sm">
+            <a class="navbar-brand" href="#">Categories:</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="novels.html">Novels</a>
+                            <a class="dropdown-item" href="fantasy.html">Fantasy Series</a>
+                            <a class="dropdown-item" href="scifi.html">Science Fiction Books</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron-index jumbotron">
+        <div class="container">
+            <h1 class="display-4">Welcome to Ben's Website: A Small Compendium of Favorite Books and Locations</h1>
+            <p class="lead">The purpose of this website is threefold:</p>
+            <ol>
+                <li>Rank my favorite novels, fantasy series, and science fiction books</li>
+                <li>Provide a short summary of my favorite locations</li>
+                <li>Help my family decide on a vacation rental property</li>
+            </ol>
+            <hr class="my-4">
+            <p>To see a carefully curated compilation of books, click one of the gray buttons. To see a few cool travel spots and, more importantly, help my family decide which house to pick for their upcoming vacation, click the blue button!</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a class="btn btn-secondary btn-sm" href="novels.html" role="button" style="width: 10rem;">Novels</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a class="btn btn-secondary btn-sm" href="fantasy.html" style="width: 10rem;">Fantasy</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a class="btn btn-secondary btn-sm" href="scifi.html" style="width: 10rem;">Science Fiction</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a class="btn btn-primary btn-sm" href="travel.html" style="width: 10rem;">Travel</a>
+                    </div>
                 </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Food</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-  </nav>
-    <div class="jumbotron">
-        <h1 class="display-4">Ben's Website</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="row">
@@ -92,6 +117,19 @@
             </div>
             <div class="col-md-3">
                 RIGHT
+            </div>
+        </div>
+    </div>
+    <div class="container footer">
+        <div class="row my-sm-5">
+            <div class="col-sm-6">
+                <h2>
+                    <i class="fas fa-book"></i>
+                </h2>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+                <h5>Established November 1990</h5>
             </div>
         </div>
     </div>

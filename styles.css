@@ -7,14 +7,27 @@ body.fantasy {
 body.sf {
     font-family: 'Source Code Pro';
 }
+body.main {
+    font-family: 'Hind Vadodara';
+}
 .navbar {
     background-color: white;
+    font-family: 'Overpass';
 }
 .jumbotron {
     background-attachment: fixed;
     background-image: url(Library_4.jpg);
     background-repeat: inherit;
     background-size: cover;
+
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.jumbotron-index {
+    background-attachment: fixed;
+    background-image: url(Book_Beach.PNG);
+    background-repeat: inherit;
+    background-size: auto;
 
     color: white;
     text-shadow: 2px 2px 2px black;
