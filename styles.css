@@ -10,6 +10,9 @@ body.sf {
 body.main {
     font-family: 'Hind Vadodara';
 }
+body.travel {
+    font-family: 'Armata';
+}
 .navbar {
     background-color: white;
     font-family: 'Overpass';
@@ -32,6 +35,15 @@ body.main {
     background-image: url(Book_Beach.PNG);
     background-repeat: inherit;
     background-size: auto;
+
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.jumbotron-travel {
+    background-attachment: fixed;
+    background-image: url(paradise_1.PNG);
+    background-repeat: inherit;
+    background-size: 100% 25%;
 
     color: white;
     text-shadow: 2px 2px 2px black;
@@ -94,4 +106,8 @@ body.main {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.sun {
+    color: black;
+    text-align: center;
 }
